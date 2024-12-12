@@ -1,0 +1,13 @@
+{
+  "name": "hebo-ai-prototype",
+  "version": "0.1.0",
+  "description": "Hebo AI Prototype UI",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/css/style.css -o ./dist/style.css --watch",
+    "build": "npx tailwindcss -i ./src/css/style.css -o ./dist/style.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "daisyui": "^4.7.2"
+  }
+} 
