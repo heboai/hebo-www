@@ -7,15 +7,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#FCD34D",    // Bumblebee Yellow
-        secondary: "#F3F4F6",  // Muted Gray
-        textgray: "#6B7280",   // Steel Gray
-        accent: "#3B82F6",     // Muted Blue
-        error: "#EF4444",      // Soft Red
-        success: "#10B981",    // Soft Green
+        primary: "#EEC544",
+        secondary: "#F3F4F6",
+        textgray: "#6B7280",
+        accent: "#3B82F6",
+        error: "#EF4444",
+        success: "#10B981",
       },
       fontFamily: {
-        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+        sans: ['Geist', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
       },
     },
   },
@@ -25,7 +25,7 @@ module.exports = {
       {
         bumblebee: {
           ...require("daisyui/src/theming/themes")["[data-theme=bumblebee]"],
-          primary: "#FCD34D",
+          primary: "#EEC544",
           "primary-content": "#FFFFFF",
           neutral: "#6B7280",
           "base-100": "#FFFFFF",
