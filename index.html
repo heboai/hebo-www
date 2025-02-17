@@ -27,7 +27,7 @@
     />
     <meta
       property="og:description"
-      content="Hebo AI aligns your team, cuts friction, and turns AI ideas into results. Launch your AI agents with confidence."
+      content="The no-code toolchain to manage the full lifecycle of AI agents, from building & testing over real-time monitoring to quick iterations."
     />
     <meta property="og:image" content="https://hebo.ai/public/og-image.png" />
     <meta property="og:url" content="https://hebo.ai" />
@@ -41,18 +41,18 @@
     />
     <meta
       name="twitter:description"
-      content="Hebo AI aligns your team, cuts friction, and turns AI ideas into results. Launch your AI agents with confidence."
+      content="The no-code toolchain to manage the full lifecycle of AI agents, from building & testing over real-time monitoring to quick iterations."
     />
     <meta name="twitter:image" content="https://hebo.ai/public/og-image.png" />
 
     <!-- SEO Meta Tags -->
     <meta
       name="description"
-      content="Hebo AI aligns your team, cuts friction, and turns AI ideas into results. Launch your AI agents with confidence."
+      content="The no-code toolchain to manage the full lifecycle of AI agents, from building & testing over real-time monitoring to quick iterations."
     />
     <meta
       name="keywords"
-      content="AI agents, deployment platform, AI monitoring, AI safety, enterprise AI"
+      content="AI agents, deployment platform, AI monitoring, AI agent testing, enterprise AI"
     />
     <meta name="author" content="Infinite Monkey AI" />
 
@@ -103,229 +103,128 @@
       }
     </script>
   </head>
-  <body class="min-h-screen bg-base-100 font-sans">
-    <!-- Floating Buttons -->
-    <div class="fixed bottom-6 right-6 z-50 flex gap-4">
-      <!-- Chat Text Bubble -->
-      <div
-        class="bg-primary rounded-full px-8 py-4 shadow-lg hover:shadow-2xl transition-shadow flex items-center"
-      >
-        <span class="font-medium text-black whitespace-nowrap"
-          >Chat with us!</span
-        >
-      </div>
-
-      <!-- WhatsApp Button -->
-      <a
-        href="https://api.whatsapp.com/send/?phone=393331769430&text=mh%2C+hebo%3F"
-        class="transition-transform hover:scale-110"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div class="rounded-full shadow-lg hover:shadow-2xl transition-shadow">
-          <img
-            src="./public/whatsapp_icon.png"
-            alt="Chat with us on WhatsApp"
-            class="w-14 h-14"
-          />
+  <body class="min-h-screen font-sans gradient-bg">
+    <!-- Navbar -->
+    <div class="sticky top-0 z-[1000] px-2 py-6">
+      <div class="mx-auto w-[95%]" style="background: #f5e6adcc; box-shadow: 0px 2px 10px rgba(0,0,0,0.05); border-radius: 10px;">
+        <div class="flex items-center justify-between px-4">
+          <div class="flex items-center gap-2">
+            <img src="./public/logo.png" width="50" height="50" alt="hebo logo" class="text-current" />
+            <span class="font-bold text-xl text-gray-900">hebo.ai</span>
+          </div>
+          <div class="flex items-center gap-4">
+            <a href="https://discord.gg/ZHSXcQkK" class="text-gray-600 hover:text-black transition flex items-center gap-2" target="_blank" rel="noopener noreferrer">
+              Discord
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+              </svg>
+            </a>
+            <a href="https://github.com/heboai" class="text-gray-600 hover:text-black transition flex items-center gap-2" target="_blank" rel="noopener noreferrer">
+              Fair Source
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
+          </div>
         </div>
-      </a>
-    </div>
-
-    <!-- Header -->
-    <header class="px-4 py-2 flex justify-between items-center">
-      <div class="font-bold text-xl text-gray-900 flex items-center gap-2">
-        <img
-          src="./public/logo.jpeg"
-          width="24.5"
-          height="24.5"
-          alt="hebo logo"
-          class="text-current"
-        />
-        Hebo AI
       </div>
-      <a
-        href="https://github.com/heboai"
-        class="text-gray-600 hover:text-black transition flex items-center gap-2"
-      >
-        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-          <path
-            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-          />
-        </svg>
-        GitHub
-      </a>
-    </header>
+    </div>
 
     <!-- Hero Section -->
     <main>
+
       <section
-        class="min-h-[80vh] flex flex-col items-center justify-center px-4"
+        class="min-h-[60vh] flex flex-col items-center justify-center px-4"
       >
+      <!-- New Announcement Chip -->
+      <div class="flex justify-center mt-8 mb-4">
+        <div style="background-color: #c1e5f57f" class="text-black px-6 py-2 rounded-full inline-flex items-center gap-2">
+          <span class="text-xl">👨‍💻</span>
+          <span class="font-medium text-sm md:text-base">We are hiring, join us on our journey ></span>
+        </div>
+      </div>
         <h1
-          class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 text-center max-w-2xl"
+          class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 text-center max-w-2xl relative"
         >
-          Launch your AI Agent with Confidence
-          <span class="text-primary">> Every Time</span>
+          Launch your AI Agent with Confidence<span class="text-primary inline-flex items-center"><img 
+              src="./public/hero-icon.png" 
+              alt="arrow" 
+              class="w-8 h-8 mx-3 transform rotate-45"
+            />Every Time</span>
+          <img 
+            src="./public/thumbup-icon.png" 
+            alt="thumbs up" 
+            class="absolute -right-12 top-1/2 -translate-y-1/2 w-24 h-24 object-contain hidden md:block"
+          />
         </h1>
-        <p class="text-gray-600 text-lg text-center mt-6 max-w-md">
-          Cut friction and turn AI ideas into results.
+        <p class="text-black text-lg text-center mt-6 max-w-2xl">
+          The no-code toolchain to manage the full lifecycle of AI agents,
+          from building & testing over real-time monitoring to quick iterations.
         </p>
-        <button
-          onclick="document.getElementById('book-demo').scrollIntoView()"
-          class="mt-8 bg-primary hover:bg-primary-focus text-black font-medium px-8 py-3 rounded-md transition-colors"
+        <a
+          href="https://discord.gg/ZHSXcQkK"
+          class="mt-8 inline-flex items-center gap-2 px-8 py-3 rounded-full font-medium text-black transition-transform hover:scale-105"
+          style="background: linear-gradient(90deg, #fcc44bff 0%, #f5e6adff 50%, #fcc44bff 100%)"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Get Early Access
-        </button>
-      </section>
-
-      <!-- Benefits Section -->
-      <section class="py-12 px-4 bg-base-200">
-        <div class="max-w-5xl mx-auto">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <!-- Left side - Title and subtitle -->
-            <div class="flex flex-col justify-center">
-              <h2 class="text-3xl font-bold text-gray-900 mb-4">
-                Build AI Agents That Actually Work.
-              </h2>
-              <p class="text-gray-600 text-lg">
-                Eliminate barriers and see your AI deliver real value.
-              </p>
-            </div>
-
-            <!-- Right side - Benefits grid -->
-            <div class="grid grid-cols-1 gap-8">
-              <div class="flex gap-4">
-                <svg
-                  class="w-12 h-12 flex-shrink-0 text-gray-600"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1"
-                  stroke-linecap="square"
-                  stroke-linejoin="miter"
-                >
-                  <path d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-                <div>
-                  <h3 class="font-semibold text-lg text-gray-900 mb-2">
-                    Faster Setup
-                  </h3>
-                  <p class="text-gray-600">
-                    Quickly launch AI agents with ready-to-use features,
-                    minimizing development complexity and effort.
-                  </p>
-                </div>
-              </div>
-              <div class="flex gap-4">
-                <svg
-                  class="w-12 h-12 flex-shrink-0 text-gray-600"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1"
-                  stroke-linecap="square"
-                  stroke-linejoin="miter"
-                >
-                  <path
-                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-                  />
-                </svg>
-                <div>
-                  <h3 class="font-semibold text-lg text-gray-900 mb-2">
-                    Curated Knowledge
-                  </h3>
-                  <p class="text-gray-600">
-                    Maintain control over your agent's responses by easily
-                    organizing and refining content, ensuring better accuracy
-                    and relevance.
-                  </p>
-                </div>
-              </div>
-              <div class="flex gap-4">
-                <svg
-                  class="w-12 h-12 flex-shrink-0 text-gray-600"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1"
-                  stroke-linecap="square"
-                  stroke-linejoin="miter"
-                >
-                  <path
-                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                  />
-                </svg>
-                <div>
-                  <h3 class="font-semibold text-lg text-gray-900 mb-2">
-                    Clear Performance Insights
-                  </h3>
-                  <p class="text-gray-600">
-                    Track performance in real-time, run controlled evaluations,
-                    and compare results across versions to confidently improve
-                    your agent's quality.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Email Capture Section -->
-      <section id="book-demo" class="py-16 px-4">
-        <div class="max-w-md mx-auto">
-          <a
-            href="https://api.whatsapp.com/send/?phone=393331769430&text=mh%2C+hebo%3F"
-            class="inline-block hover:opacity-80 transition-opacity"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div
-              class="flex items-center justify-center gap-4 bg-primary hover:bg-primary-focus text-black font-medium px-8 py-3 rounded-md transition-colors"
-            >
-              <img
-                src="./public/whatsapp_icon.png"
-                alt="Chat with us on WhatsApp"
-                class="w-8 h-8"
-              />
-              <h2 class="text-l font-bold text-gray-900">
-                Got questions? Chat with us!
-              </h2>
-            </div>
-          </a>
-        </div>
-      </section>
+          <img
+            src="./public/discord-icon-purple.png"
+            alt="Discord"
+            class="h-8"
+          />
+          <span class="text-[#5865F2] text-lg font-bold">Get Early Access</span>
+        </a>
+        <p class="text-black text-sm text-center mt-3 max-w-2xl italic">
+          Fair Source: publicly available to use.
+        </p>
+      </section>      
     </main>
 
-    <!-- Footer -->
-    <footer
-      class="py-6 text-center text-gray-600 text-sm border-t border-gray-200"
-    >
-      <p class="mb-4">© 2024 Hebo AI by Infinite Monkey AI.</p>
-      <div class="flex justify-center gap-4">
-        <p class="mb-4">Built in public.</p>
-        <a
-          href="https://github.com/heboai"
-          class="text-gray-600 hover:text-black transition"
-        >
-          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-            />
-          </svg>
-        </a>
-        <a
-          href="https://x.com/DavideSelvaggio"
-          class="text-gray-600 hover:text-black transition"
-        >
-          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-            />
-          </svg>
+    <!-- Forbes Quote Section -->
+    <div class="flex justify-center w-full my-16">
+      <div style="background-color: #fbe3d67f" class="w-[60%] rounded-xl p-8 flex flex-col items-center">
+        <div class="flex flex-col md:flex-row items-center gap-8 mb-6">
+          <img src="./public/forbes-logo.png" 
+               alt="Forbes Logo" 
+               class="h-12 object-contain" />
+          <div class="flex flex-col">
+            <p class="text-2xl md:text-3xl italic text-gray-900 font-light leading-tight text-center md:text-left">"90% of Generative AI Pilots</p>
+            <p class="text-2xl md:text-3xl italic text-gray-900 font-light text-center md:text-left">Fail To Move Into Production"</p>
+          </div>
+        </div>
+        <a href="https://www.forbes.com/sites/peterbendorsamuel/2024/01/08/reasons-why-generative-ai-pilots-fail-to-move-into-production/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="text-sm text-gray-600 hover:text-black transition text-center">
+          Read the full article on Forbes →
         </a>
       </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-gray-600 text-sm">
+      <div class="flex justify-center gap-6 mb-4">
+        <a
+          href="https://github.com/heboai"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center justify-between w-52 bg-[#f5e6ad] rounded-xl px-4 py-2 hover:scale-105 transition"
+        >
+          <span class="text-gray-900 font-semibold text-sm">Fair Source</span>
+          <img src="./public/github-logo.png" alt="GitHub Logo" class="h-8" />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/heboai"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center justify-between w-52 bg-[#f5e6ad] rounded-xl px-4 py-2 hover:scale-105 transition"
+        >
+          <span class="text-gray-900 font-semibold text-sm">Built in public</span>
+          <img src="./public/linkedIn-follow.png" alt="LinkedIn Logo" class="h-9" />
+        </a>
+      </div>      
+      <p class="mb-4">© 2025 by Infinite Monkey Sdn Bhd</p>
     </footer>
   </body>
 </html>

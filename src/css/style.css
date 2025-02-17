@@ -59,4 +59,9 @@ html.fonts-loaded {
 
 .text-caption {
   @apply text-xs text-gray-400;
+}
+
+/* Add gradient background class */
+.gradient-bg {
+  background: linear-gradient(45deg, #F6F0C1, #F4EAB9);
 } 
