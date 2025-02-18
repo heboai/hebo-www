@@ -66,26 +66,29 @@
     <meta name="theme-color" content="#f9c823" />
 
     <!-- Favicons -->
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="./public/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./public/favicon.svg" />
+    <link rel="shortcut icon" href="./public/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Hebo AI" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="manifest" href="./public/site.webmanifest" />
     <meta name="msapplication-TileColor" content="#f9c823">
     <meta name="theme-color" content="#f9c823">
 
     <!-- Load fonts -->
-    <link rel="preconnect" href="https://vercel.com" />
-    <link
-      rel="preload"
-      href="https://vercel.com/font/geist-sans/style.css"
-      as="style"
-    />
-    <link
-      href="https://vercel.com/font/geist-sans/style.css"
+    <link rel="preconnect" href="https://vercel.com" crossorigin="anonymous" />
+    <link 
       rel="stylesheet"
+      href="https://vercel.com/font/geist-sans/style.css"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://vercel.com/font/geist-sans/style.css"
+      />
+    </noscript>
 
     <link href="./dist/style.css" rel="stylesheet" />
     <style>
