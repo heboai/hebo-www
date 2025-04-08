@@ -20,6 +20,12 @@
                     <a href="https://www.linkedin.com/company/heboai/jobs/" class="hiring-badge">Hiring</a>
                 </div>
                 
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
                 <div class="nav-links">
                     <a href="#" class="nav-link">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,6 +65,8 @@
                 <a href="https://app.hebo.ai" class="sign-up-btn">Sign Up</a>
             </nav>
         </header>
+        
+        <div class="menu-overlay"></div>
         
         <div class="announcement">
             <span style="margin-right: 8px;">😊</span> NEW: Evals - quality control for any LLM / agent >
@@ -154,12 +162,18 @@
                 <span>Which LLM models does Hebo support?</span>
                 <span class="plus-icon">+</span>
             </div>
+            <div class="faq-answer">
+                <p>Hebo supports a wide range of LLM models including OpenAI's GPT-3.5, GPT-4, Anthropic's Claude, and open-source models like Llama 2. Our platform is designed to be model-agnostic, allowing you to easily switch between different providers or use your own custom models.</p>
+            </div>
         </div>
         
         <div class="faq-item">
             <div class="faq-question">
                 <span>Does Hebo integrate with my existing systems?</span>
                 <span class="plus-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Yes, Hebo is designed to integrate seamlessly with your existing systems. We provide APIs, webhooks, and SDKs for popular programming languages to make integration straightforward. Our platform can connect with your CRM, ticketing systems, knowledge bases, and other tools you already use.</p>
             </div>
         </div>
         
@@ -168,12 +182,18 @@
                 <span>How is my data in Hebo secured?</span>
                 <span class="plus-icon">+</span>
             </div>
+            <div class="faq-answer">
+                <p>Data security is our top priority. Hebo uses industry-standard encryption for data at rest and in transit. We are SOC 2 Type II compliant and regularly undergo security audits. Your data is never shared with third parties without your explicit consent, and you have full control over your data retention policies.</p>
+            </div>
         </div>
         
         <div class="faq-item">
             <div class="faq-question">
                 <span>Can Hebo be deployed on premise?</span>
                 <span class="plus-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Yes, Hebo offers an on-premise deployment option for enterprises with strict data governance requirements. Our on-premise solution includes all the features of our cloud platform but runs within your own infrastructure, giving you complete control over your data and ensuring compliance with internal policies.</p>
             </div>
         </div>
         
@@ -182,11 +202,15 @@
                 <span>Is Hebo free to use?</span>
                 <span class="plus-icon">+</span>
             </div>
+            <div class="faq-answer">
+                <p>Hebo offers a free tier that allows you to get started with basic features and a limited number of API calls. For teams and businesses, we offer tiered pricing plans based on usage and feature requirements. Contact our sales team for a custom quote tailored to your specific needs.</p>
+            </div>
         </div>
     </section>
     
-    <!-- LinkedIn Section -->
-    <section class="linkedin-section">
+    <!-- Combined Community, LinkedIn, and Footer Section -->
+    <section class="combined-section">
+        <div class="combined-content">
         <h2 class="section-title">Follow us on LinkedIn for the latest Gen AI developments</h2>
         <div class="linkedin-grid">
             <!-- LinkedIn Card 1 -->
@@ -250,10 +274,8 @@
                 </svg>
             </a>
         </div>
-    </section>
 
-    <!-- Join Community Section -->
-    <section class="community-section">
+            <div class="community-section">
         <h2 class="section-title">Join the Community</h2>
         <div class="community-links">
             <a href="#" class="community-link">
@@ -275,9 +297,8 @@
                 Source
             </a>
         </div>
-    </section>
+            </div>
     
-    <footer class="footer">
         <div class="footer-content">
             <div class="footer-logo">
                 <div class="logo-square"></div>
@@ -285,17 +306,68 @@
             </div>
             <p class="footer-text">is designed, built and backed by <span class="company-name">Infinite Monkey Sdn Bhd</span> (202501003121)</p>
         </div>
-    </footer>
+        </div>
+    </section>
 </div>
 
     <div class="discord-chat">
         <a href="https://discord.gg/cCJtXZRU5p" target="_blank" class="discord-link">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02zM8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12zm6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12z" fill="white"/>
-            </svg>
-            <div class="notification">1</div>
+        </svg>
+        <div class="notification">1</div>
         </a>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    // Close all other FAQ items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current FAQ item
+                    item.classList.toggle('active');
+                });
+            });
+            
+            // Mobile menu functionality
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            const menuOverlay = document.querySelector('.menu-overlay');
+            
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                menuOverlay.classList.toggle('active');
+            });
+            
+            // Close menu when clicking on overlay
+            menuOverlay.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                menuOverlay.classList.remove('active');
+            });
+            
+            // Close menu when clicking on a nav link
+            const navItems = document.querySelectorAll('.nav-link');
+            navItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    menuToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                    menuOverlay.classList.remove('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
 
