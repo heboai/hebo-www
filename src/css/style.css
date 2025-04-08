@@ -1290,4 +1290,24 @@ nav {
 /* Remove the old section styles that are now combined */
 .linkedin-section, .footer {
     display: none;
+}
+
+.mobile-talk-btn {
+    width: auto;
+    min-width: 120px;
+    padding: 8px 16px;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .mobile-talk-btn {
+        margin-top: 16px;
+    }
 } 
