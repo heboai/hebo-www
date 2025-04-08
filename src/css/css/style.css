@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Add this before Tailwind imports */
+html {
+  font-display: swap;
+  opacity: 0;
+  transition: opacity 0.1s ease-in;
+}
+
+html.fonts-loaded {
+  opacity: 1;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1 {
+    @apply text-2xl font-bold;
+  }
+
+  h2 {
+    @apply text-xl font-bold;
+  }
+
+  h3 {
+    @apply text-lg font-medium;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply rounded-lg transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply shadow-sm hover:shadow;
+  }
+
+  .input {
+    @apply rounded-lg border-gray-200;
+  }
+}
+
+/* Typography utilities */
+.text-body {
+  @apply text-base text-gray-600;
+}
+
+.text-body-sm {
+  @apply text-sm text-gray-500;
+}
+
+.text-caption {
+  @apply text-xs text-gray-400;
+}
+
+/* Add gradient background class */
+.gradient-bg {
+  background: linear-gradient(45deg, #FCC44B, #F8F9C7);
+} 

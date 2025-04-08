@@ -1,257 +1,376 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="bumblebee">
-  <head>
-    <!-- Add this canonical tag -->
-    <link rel="canonical" href="https://hebo.ai" />
-
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-ZJJ115Z0CH"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-ZJJ115Z0CH");
-    </script>
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hebo AI - Launch AI Agents with Confidence</title>
-
-    <!-- Open Graph Meta Tags -->
-    <meta
-      property="og:title"
-      content="Hebo AI - Launch AI Agent with Confidence"
-    />
-    <meta
-      property="og:description"
-      content="Manage the whole lifecycle of your conversational agents, from building & testing over real-time monitoring to rapid iterations."
-    />
-    <meta property="og:image" content="https://hebo.ai/public/og-image.png" />
-    <meta property="og:url" content="https://hebo.ai" />
-    <meta property="og:type" content="website" />
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Hebo AI - Launch AI Agent with Confidence"
-    />
-    <meta
-      name="twitter:description"
-      content="Manage the whole lifecycle of your conversational agents, from building & testing over real-time monitoring to rapid iterations."
-    />
-    <meta name="twitter:image" content="https://hebo.ai/public/og-image.png" />
-
-    <!-- SEO Meta Tags -->
-    <meta
-      name="description"
-      content="Manage the whole lifecycle of your conversational agents, from building & testing over real-time monitoring to rapid iterations."
-    />
-    <meta
-      name="keywords"
-      content="AI agents, deployment platform, AI monitoring, AI agent testing, enterprise AI"
-    />
-    <meta name="author" content="Infinite Monkey AI" />
-
-    <!-- Robots Meta Tag -->
-    <meta name="robots" content="index, follow" />
-
-    <!-- Language and Locale -->
-    <meta name="language" content="English" />
-
-    <!-- Color Theme for Mobile Browsers -->
-    <meta name="theme-color" content="#f9c823" />
-
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" href="/public/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
-    <link rel="shortcut icon" href="/public/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Hebo AI" />
-    <link rel="manifest" href="/public/site.webmanifest" />
-    <meta name="msapplication-TileColor" content="#f9c823">
-    <meta name="theme-color" content="#f9c823">
-
-    <!-- Load fonts -->
-    <link rel="preconnect" href="https://vercel.com" crossorigin="anonymous" />
-    <link 
-      rel="stylesheet"
-      href="https://vercel.com/font/geist-sans/style.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://vercel.com/font/geist-sans/style.css"
-      />
-    </noscript>
-
-    <link href="/dist/style.css" rel="stylesheet" />
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
-
-    <!-- Add font loading detection -->
-    <script>
-      if ("fonts" in document) {
-        Promise.all([
-          document.fonts.load("1em Geist"),
-          document.fonts.load("500 1em Geist"),
-          document.fonts.load("600 1em Geist"),
-          document.fonts.load("700 1em Geist"),
-        ]).then(() => {
-          document.documentElement.classList.add("fonts-loaded");
-        });
-      } else {
-        document.documentElement.classList.add("fonts-loaded");
-      }
-    </script>
-  </head>
-  <body class="min-h-screen font-sans gradient-bg">
-    <!-- Navbar -->
-    <div class="sticky top-0 z-[1000] px-2 py-6">
-      <div class="mx-auto w-[95%]" style="background: rgba(245, 230, 173, 0.8); box-shadow: 0px 2px 10px rgba(0,0,0,0.05); border-radius: 10px;">
-        <div class="flex items-center justify-between px-4">
-          <div class="flex items-center">
-            <img src="/public/logo.png" width="50" height="50" alt="hebo logo" class="text-current" />
-            <span class="font-bold text-xl text-gray-900">hebo.ai</span>
-          </div>
-          <div class="flex items-center gap-4">
-            <a href="https://discord.gg/cCJtXZRU5p" class="text-black px-2 py-1 rounded-lg hover:bg-[#F2F2F2]/50 transition flex items-center gap-2" target="_blank" rel="noopener noreferrer">
-              <span class="inline max-xs:hidden">Discord</span>
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
-              </svg>
-            </a>
-            <a href="https://github.com/heboai" class="text-black px-2 py-1 rounded-lg hover:bg-[#F2F2F2]/50 transition flex items-center gap-2" target="_blank" rel="noopener noreferrer">
-              <span class="inline max-xs:hidden">Fair Source</span>
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.237 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-              </svg>
-            </a>
-          </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hebo.ai - Launch AI Agents with Confidence</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo-container">
+                    <div class="logo-wrapper">
+                        <img src="images/hero-icon.svg" alt="Hebo Logo" class="logo-icon">
+                    </div>
+                    <div class="logo-text">hebo.ai</div>
+                    <a href="https://www.linkedin.com/company/heboai/jobs/" class="hiring-badge">Hiring</a>
+                </div>
+                
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <div class="nav-links">
+                    <a href="#" class="nav-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 9H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M8 13H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M8 17H12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        Docs
+                    </a>
+                    <a href="https://discord.gg/cCJtXZRU5p" class="nav-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.5997 2.37562 15.1116 3.04346 16.4525C3.22094 16.8088 3.28001 17.2161 3.17712 17.6006L2.58151 19.8267C2.32295 20.793 3.20701 21.677 4.17335 21.4185L6.39939 20.8229C6.78393 20.72 7.19121 20.7791 7.54753 20.9565C8.88837 21.6244 10.4003 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 12H8.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 12H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M16 12H16.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        Discord
+                    </a>
+                    <a href="https://github.com/heboai" class="nav-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 22V18C15.1392 16.7473 14.78 15.4901 14 14.5C17 14.5 20 12.5 20 9C20.08 7.75 19.73 6.52 19 5.5C19.28 4.35 19.28 3.15 19 2C19 2 18 2 16 3.5C13.36 3 10.64 3 8 3.5C6 2 5 2 5 2C4.7 3.15 4.7 4.35 5 5.5C4.27 6.52 3.92 7.75 4 9C4 12.5 7 14.5 10 14.5C9.61 14.99 9.32 15.55 9.15 16.15C8.98 16.75 8.93 17.38 9 18V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 18C4.49 20 4 16 2 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Source
+                    </a>
+                    <a href="https://app.hebo.ai" class="nav-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M3 9H21" stroke="currentColor" stroke-width="2"/>
+                            <path d="M9 21V9" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        Enterprise
+                    </a>
+                    <a href="https://app.hebo.ai" class="sign-up-btn">Sign Up</a>
+                </div>
+                
+                <a href="https://app.hebo.ai" class="sign-up-btn">Sign Up</a>
+            </nav>
+        </header>
+        
+        <div class="menu-overlay"></div>
+        
+        <div class="announcement">
+            <span style="margin-right: 8px;">😊</span> NEW: Evals - quality control for any LLM / agent >
         </div>
-      </div>
-    </div>
-
-    <!-- Hero Section -->
-    <main>
-      <section
-        class="flex flex-col items-center px-4 pt-2 md:pt-12"
-      >
-      <!-- New Announcement Chip -->
-      <div class="flex justify-center mb-4">
-        <a href="https://www.linkedin.com/company/heboai/jobs" 
-           target="_blank" 
-           rel="noopener noreferrer" 
-           class="hover:opacity-90 transition">
-          <div style="background-color: rgba(193, 229, 245, 0.5)" class="text-black px-4 py-1.5 rounded-full inline-flex items-center gap-2">
-            <span class="text-lg">👨‍💻</span>
-            <span class="font-medium text-xs md:text-sm">We are hiring, join us on our journey ></span>
-          </div>
-        </a>
-      </div>
-        <div class="flex flex-col items-center mt-2 md:mt-6">
-          <div class="text-2xl xs:text-3xl sm:text-5xl md:text-6xl font-bold text-gray-900 text-center mb-2">
-            Launch AI Agents with
-          </div>
-          <div class="text-2xl xs:text-3xl sm:text-5xl md:text-6xl font-bold text-gray-900 text-center flex items-center relative">
-            Confidence
-            <img 
-              src="/public/hero-icon.png" 
-              alt="arrow" 
-              class="h-7 sm:h-9 mx-3 transform rotate-45"
-            />
-            <span class="text-primary">Every Time</span>
-            <img 
-              src="/public/thumbup-icon.png" 
-              alt="thumbs up"
-              class="absolute -right-32 -top-20 w-32 h-32 object-contain hidden lg:block"
-            />
-          </div>
-        </div>
-        <p class="text-black text-xl text-center mt-6 max-w-2xl">
-          Manage the whole lifecycle of your conversational agents, from <u>building & testing</u> over <u>real-time monitoring</u> to <u>rapid iterations</u>.
-        </p>
-        <a
-          href="https://discord.gg/cCJtXZRU5p"
-          class="mt-8 inline-flex items-center gap-2 px-8 py-3 rounded-full font-medium text-black transition-transform hover:scale-105 shadow-md"
-          style="background: linear-gradient(90deg, #FCC44B 0%, #F8F9C7 50%, #FCC44B 100%)"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="/public/discord-icon-purple.png"
-            alt="Discord"
-            class="h-8"
-          />
-          <span class="text-[#5865F2] text-lg font-bold">Get Early Access</span>
-        </a>
-        <p class="text-black text-sm text-center mt-3 max-w-2xl italic">
-          Fair Source: publicly available to use
-        </p>
-      </section>      
-    </main>
-
-    <!-- Forbes Quote Section -->
-    <div class="flex justify-center w-full my-16">
-      <a href="https://www.forbes.com/sites/peterbendorsamuel/2024/01/08/reasons-why-generative-ai-pilots-fail-to-move-into-production/"
-         target="_blank"
-         rel="noopener noreferrer"
-         class="w-[95%] lg:w-[60%] transition hover:scale-[1.02]">
-        <div style="background-color: #fbe3d680" class="rounded-xl p-8 flex flex-col items-center">
-          <div class="flex flex-col md:flex-row items-center gap-8 mb-6">
-            <img src="/public/forbes-logo.png" 
-                 alt="Forbes Logo" 
-                 class="h-12 object-contain" />
-            <div class="flex flex-col">
-              <p class="text-2xl md:text-3xl italic text-gray-900 font-light leading-tight text-center md:text-left">"90% of Generative AI Pilots</p>
-              <p class="text-2xl md:text-3xl italic text-gray-900 font-light text-center md:text-left">Fail To Move Into Production"</p>
+        
+        <section class="hero">
+            <div class="hero-content">
+                <h1>
+                    Launch AI Agents with <span class="yellow-text">Confidence</span> <img src="images/hero-icon.svg" alt="Hero Icon" class="hero-icon"> <span class="yellow-text">Every Time</span>
+                    <div class="underline"></div>
+                </h1>
+                
+                <p>
+                    Manage the full lifecycle of your conversational agents, from <a href="#">building</a> & <a href="#">testing</a> over <a href="#">real-time monitoring</a> to <a href="#">rapid iterations</a>.
+                </p>
+                
+                <div class="cta-buttons">
+                    <a href="https://app.hebo.ai" class="cta-btn primary-btn">Get started for Free</a>
+                    <a href="https://github.com/heboai/hebo-eval" class="cta-btn primary-btn">
+                        Hebo Evals
+                        <span class="new-badge">New</span>
+                    </a>
+                </div>
+                
+                <div class="github-link">
+                    <a href="https://github.com/heboai">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 22V18C15.1392 16.7473 14.78 15.4901 14 14.5C17 14.5 20 12.5 20 9C20.08 7.75 19.73 6.52 19 5.5C19.28 4.35 19.28 3.15 19 2C19 2 18 2 16 3.5C13.36 3 10.64 3 8 3.5C6 2 5 2 5 2C4.7 3.15 4.7 4.35 5 5.5C4.27 6.52 3.92 7.75 4 9C4 12.5 7 14.5 10 14.5C9.61 14.99 9.32 15.55 9.15 16.15C8.98 16.75 8.93 17.38 9 18V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 18C4.49 20 4 16 2 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Fair Source: Join our community
+                    </a>
+                </div>
             </div>
-          </div>
-          <span class="text-sm text-gray-600 transition text-center">
-            Read the full article on Forbes →
-          </span>
+        </section>
+        
+        <section class="lifecycle">
+            <div class="lifecycle-wrapper">
+                <h2 class="lifecycle-title">The full lifecycle:</h2>
+                <div class="lifecycle-container">
+                    <div class="lifecycle-steps">
+                        <div class="step active">Build</div>
+                        <div class="step">
+                            Test
+                            <span class="new-badge">New</span>
+                        </div>
+                        <div class="step">Monitor</div>
+                        <div class="step">Iterate</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="dashboard-preview">
+                <img src="images/hebo-dashboard.png" alt="Hebo Dashboard" class="dashboard-img">
+            </div>
+        </section>
+    
+    <section class="existing-llm">
+        <h2 class="section-title">Already have an existing LLM / Agent?</h2>
+        <p class="section-subtitle">Get started with Hebo Evals to bullet proof your response quality</p>
+        
+        <div class="code-block">
+            <code>> npx install hebo-eval@latest</code>
+            <button class="copy-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="9" y="9" width="13" height="13" rx="2" stroke="white" stroke-width="2"/>
+                    <path d="M5 15H4C2.89543 15 2 14.1046 2 13V4C2 2.89543 2.89543 2 4 2H13C14.1046 2 15 2.89543 15 4V5" stroke="white" stroke-width="2"/>
+                </svg>
+            </button>
         </div>
-      </a>
+        
+        <a href="#" class="learn-more">Works with any LLM / agent framework, learn more...</a>
+    </section>
+    
+    <section class="enterprise-pilot">
+        <div class="pilot-container">
+            <div class="pilot-content">
+                <h2 class="pilot-title">Is your Enterprise AI Pilot stuck?</h2>
+                <p class="pilot-text">We offer tailored enterprise services - let us help you!</p>
+                <a href="https://3ccat2022.sg.larksuite.com/scheduler/69f1b552384fa196" class="talk-btn">Talk to us</a>
+            </div>
+            <div class="pilot-image">
+                <img src="images/Bitmap.png" alt="Cloud providers cube" class="cloud-cube">
+            </div>
+        </div>
+    </section>
+    
+    <section class="faq">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Which LLM models does Hebo support?</span>
+                <span class="plus-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Hebo supports a wide range of LLM models including OpenAI's GPT-3.5, GPT-4, Anthropic's Claude, and open-source models like Llama 2. Our platform is designed to be model-agnostic, allowing you to easily switch between different providers or use your own custom models.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Does Hebo integrate with my existing systems?</span>
+                <span class="plus-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Yes, Hebo is designed to integrate seamlessly with your existing systems. We provide APIs, webhooks, and SDKs for popular programming languages to make integration straightforward. Our platform can connect with your CRM, ticketing systems, knowledge bases, and other tools you already use.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>How is my data in Hebo secured?</span>
+                <span class="plus-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Data security is our top priority. Hebo uses industry-standard encryption for data at rest and in transit. We are SOC 2 Type II compliant and regularly undergo security audits. Your data is never shared with third parties without your explicit consent, and you have full control over your data retention policies.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Can Hebo be deployed on premise?</span>
+                <span class="plus-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Yes, Hebo offers an on-premise deployment option for enterprises with strict data governance requirements. Our on-premise solution includes all the features of our cloud platform but runs within your own infrastructure, giving you complete control over your data and ensuring compliance with internal policies.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Is Hebo free to use?</span>
+                <span class="plus-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Hebo offers a free tier that allows you to get started with basic features and a limited number of API calls. For teams and businesses, we offer tiered pricing plans based on usage and feature requirements. Contact our sales team for a custom quote tailored to your specific needs.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Combined Community, LinkedIn, and Footer Section -->
+    <section class="combined-section">
+        <div class="combined-content">
+        <h2 class="section-title">Follow us on LinkedIn for the latest Gen AI developments</h2>
+        <div class="linkedin-grid">
+            <!-- LinkedIn Card 1 -->
+            <div class="linkedin-card">
+                <div class="card-header">
+                    <div class="card-logo"></div>
+                    <span class="card-author">hebo.ai</span>
+                </div>
+                <p class="card-content">Claude 3.5 Sonnet introduces significant advancements in AI capabilities, particularly in expert reasoning and extended thought modes.</p>
+                <p class="card-read-more">These improvements <br>→ read more</p>
+                <div class="card-actions">
+                    <button class="card-btn" onclick="window.open('https://www.linkedin.com/company/heboai', '_blank')">Follow</button>
+                    <button class="card-btn">Share</button>
+                </div>
+            </div>
+            <!-- LinkedIn Card 2 -->
+            <div class="linkedin-card">
+                <div class="card-header">
+                    <div class="card-logo"></div>
+                    <span class="card-author">hebo.ai</span>
+                </div>
+                <p class="card-content">Claude 3.5 Sonnet introduces significant advancements in AI capabilities, particularly in expert reasoning and extended thought modes.</p>
+                <p class="card-read-more">These improvements <br>→ read more</p>
+                <div class="card-actions">
+                    <button class="card-btn" onclick="window.open('https://www.linkedin.com/company/heboai', '_blank')">Follow</button>
+                    <button class="card-btn">Share</button>
+                </div>
+            </div>
+            <!-- LinkedIn Card 3 -->
+            <div class="linkedin-card">
+                <div class="card-header">
+                    <div class="card-logo"></div>
+                    <span class="card-author">hebo.ai</span>
+                </div>
+                <p class="card-content">Claude 3.5 Sonnet introduces significant advancements in AI capabilities, particularly in expert reasoning and extended thought modes.</p>
+                <p class="card-read-more">These improvements <br>→ read more</p>
+                <div class="card-actions">
+                    <button class="card-btn" onclick="window.open('https://www.linkedin.com/company/heboai', '_blank')">Follow</button>
+                    <button class="card-btn">Share</button>
+                </div>
+            </div>
+            <!-- LinkedIn Card 4 -->
+            <div class="linkedin-card">
+                <div class="card-header">
+                    <div class="card-logo"></div>
+                    <span class="card-author">hebo.ai</span>
+                </div>
+                <p class="card-content">Claude 3.5 Sonnet introduces significant advancements in AI capabilities, particularly in expert reasoning and extended thought modes.</p>
+                <p class="card-read-more">These improvements <br>→ read more</p>
+                <div class="card-actions">
+                    <button class="card-btn" onclick="window.open('https://www.linkedin.com/company/heboai', '_blank')">Follow</button>
+                    <button class="card-btn">Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="show-all-container">
+            <a href="https://www.linkedin.com/company/heboai" class="show-all-link" target="_blank">
+                Show all posts 
+                <svg xmlns="http://www.w3.org/2000/svg" class="arrow-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+            </a>
+        </div>
+
+            <div class="community-section">
+        <h2 class="section-title">Join the Community</h2>
+        <div class="community-links">
+            <a href="#" class="community-link">
+                <svg xmlns="http://www.w3.org/2000/svg" class="link-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Docs
+            </a>
+            <a href="https://discord.gg/cCJtXZRU5p" class="community-link">
+                <svg xmlns="http://www.w3.org/2000/svg" class="link-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                </svg>
+                Discord
+            </a>
+            <a href="https://github.com/heboai" class="community-link">
+                <svg xmlns="http://www.w3.org/2000/svg" class="link-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+                Source
+            </a>
+        </div>
+            </div>
+    
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-square"></div>
+                <span>hebo.ai</span>
+            </div>
+            <p class="footer-text">is designed, built and backed by <span class="company-name">Infinite Monkey Sdn Bhd</span> (202501003121)</p>
+        </div>
+        </div>
+    </section>
+</div>
+
+    <div class="discord-chat">
+        <a href="https://discord.gg/cCJtXZRU5p" target="_blank" class="discord-link">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02zM8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12zm6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12z" fill="white"/>
+        </svg>
+        <div class="notification">1</div>
+        </a>
     </div>
 
-    <!-- Footer -->
-    <footer class="py-6 text-center text-gray-600 text-sm">
-      <div class="w-[95%] mx-auto sm:w-auto">
-        <div class="flex justify-center gap-4 mb-4">
-          <a
-            href="https://github.com/heboai"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="flex-1 sm:flex-initial sm:w-52 flex items-center justify-between bg-[#F5E6AD]/80 rounded-xl px-4 py-2 hover:scale-105 transition"
-          >
-            <span class="text-gray-900 font-semibold text-sm">Fair Source</span>
-            <img src="/public/github-logo-short.png" alt="GitHub Logo" class="h-8 ml-2 sm:hidden" />
-            <img src="/public/github-logo.png" alt="GitHub Logo" class="h-8 ml-2 hidden sm:block" />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/heboai"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="flex-1 sm:flex-initial sm:w-52 flex items-center justify-between bg-[#F5E6AD]/80 rounded-xl px-4 py-2 hover:scale-105 transition"
-          >
-            <span class="text-gray-900 font-semibold text-sm">Built in public</span>
-            <img src="/public/linkedin-follow-short.webp" alt="LinkedIn Logo" class="h-9 ml-2 sm:hidden" />
-            <img src="/public/linkedIn-follow.png" alt="LinkedIn Logo" class="h-9 ml-2 hidden sm:block" />
-          </a>
-        </div>
-      </div>      
-      <p class="mb-4">© 2025 by Infinite Monkey Sdn Bhd</p>
-    </footer>
-  </body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    // Close all other FAQ items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current FAQ item
+                    item.classList.toggle('active');
+                });
+            });
+            
+            // Mobile menu functionality
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            const menuOverlay = document.querySelector('.menu-overlay');
+            
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                menuOverlay.classList.toggle('active');
+            });
+            
+            // Close menu when clicking on overlay
+            menuOverlay.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                menuOverlay.classList.remove('active');
+            });
+            
+            // Close menu when clicking on a nav link
+            const navItems = document.querySelectorAll('.nav-link');
+            navItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    menuToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                    menuOverlay.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
 </html>
+
+
+
