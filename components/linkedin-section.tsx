@@ -1,0 +1,120 @@
+"use client"
+
+import { useRef } from "react"
+
+export function LinkedInSection() {
+  const scrollContainerRef = useRef<HTMLDivElement>(null)
+
+  const posts = Array(4).fill({
+    days: "4d",
+    title:
+      "Claude 3.7 Sonnet introduces significant advancements in AI capabilities, particularly in hybrid reasoning and extended thought modes. These improvements",
+  })
+
+  return (
+    <div className="max-w-6xl mx-auto px-4 py-12">
+      <h2 className="text-2xl font-bold mb-8 text-center">Follow us on LinkedIn for the latest Gen AI developments</h2>
+
+      {/* Desktop Grid */}
+      <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {posts.map((post, index) => (
+          <div key={index} className="bg-gradient-to-br from-yellow-50 to-yellow-100 p-4 rounded-lg shadow-sm">
+            <div className="flex items-center gap-2 mb-4">
+              <div className="bg-yellow-300 p-2 rounded">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <polyline points="9 18 15 12 9 6" />
+                </svg>
+              </div>
+              <div>
+                <div className="font-bold">hebo.ai</div>
+                <div className="text-sm text-gray-600">{post.days}</div>
+              </div>
+            </div>
+
+            <p className="mb-2">{post.title}</p>
+            <a href="#" className="text-blue-600 hover:underline">
+              ... read more
+            </a>
+
+            <div className="flex mt-4 gap-4">
+              <button className="text-sm hover:text-purple-600 transition-colors">Follow</button>
+              <button className="text-sm hover:text-purple-600 transition-colors">Share</button>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Mobile Horizontal Scroll */}
+      <div className="md:hidden overflow-x-auto pb-4" ref={scrollContainerRef}>
+        <div className="flex gap-4" style={{ width: "max-content" }}>
+          {posts.map((post, index) => (
+            <div key={index} className="bg-gradient-to-br from-yellow-50 to-yellow-100 p-4 rounded-lg shadow-sm" style={{ width: "280px" }}>
+              <div className="flex items-center gap-2 mb-4">
+                <div className="bg-yellow-300 p-2 rounded">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <polyline points="9 18 15 12 9 6" />
+                  </svg>
+                </div>
+                <div>
+                  <div className="font-bold">hebo.ai</div>
+                  <div className="text-sm text-gray-600">{post.days}</div>
+                </div>
+              </div>
+
+              <p className="mb-2">{post.title}</p>
+              <a href="#" className="text-blue-600 hover:underline">
+                ... read more
+              </a>
+
+              <div className="flex mt-4 gap-4">
+                <button className="text-sm hover:text-purple-600 transition-colors">Follow</button>
+                <button className="text-sm hover:text-purple-600 transition-colors">Share</button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="flex justify-center mt-8">
+        <a href="#" className="flex items-center text-gray-600 hover:text-gray-900">
+          Show all posts
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="ml-2"
+          >
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  )
+}
