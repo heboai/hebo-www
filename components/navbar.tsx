@@ -28,7 +28,7 @@ export function NavBar() {
       </div>
 
       {/* Desktop Navigation */}
-      <div className="hidden md:flex items-center gap-6">
+      <div className="hidden md:flex items-center gap-6 mt-6">
         <div className="flex bg-[#AFCFFF]/20 rounded-[12px] p-1 gap-1">
           <Link href="/docs" className="px-4 py-2 rounded-[12px] transition-all hover:bg-[#AFCFFF] hover:text-gray-800 hover:shadow-sm text-gray-600">
             <div className="flex items-center gap-2">
