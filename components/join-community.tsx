@@ -3,12 +3,12 @@ import Link from "next/link"
 export function JoinCommunity() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
-      <div className="flex items-center gap-4 mb-8">
+      <div className="flex flex-col md:flex-row items-center gap-4 mb-8">
         <h2 className="text-2xl font-bold">Join the Community</h2>
-        <div className="flex-1 h-px bg-gray-200"></div>
+        <div className="w-full md:flex-1 h-[1px] bg-[#D8D8D8]"></div>
       </div>
 
-      <div className="flex justify-center gap-12">
+      <div className="flex flex-row justify-between md:justify-end items-center gap-4">
         <Link href="/docs" className="flex items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -64,6 +64,7 @@ export function JoinCommunity() {
           Source
         </Link>
       </div>
+      <div className="w-full h-[1px] bg-[#D8D8D8] mt-8 md:hidden"></div>
     </div>
   )
 }

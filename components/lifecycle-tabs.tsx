@@ -9,8 +9,8 @@ export function LifecycleTabs() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
-      <div className="flex flex-col items-center mb-8">
-        <h2 className="text-2xl font-bold mb-4">The full lifecycle:</h2>
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+        <h2 className="text-2xl font-bold">The full lifecycle:</h2>
         <div className="flex bg-[#AFCFFF]/20 rounded-[12px] p-1">
           {tabs.map((tab) => (
             <button

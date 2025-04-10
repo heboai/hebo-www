@@ -1,6 +1,7 @@
 "use client"
 
 import { useRef } from "react"
+import Image from "next/image"
 
 export function LinkedInSection() {
   const scrollContainerRef = useRef<HTMLDivElement>(null)
@@ -20,21 +21,13 @@ export function LinkedInSection() {
         {posts.map((post, index) => (
           <div key={index} className="bg-gradient-to-br from-yellow-50 to-yellow-100 p-4 rounded-lg shadow-sm">
             <div className="flex items-center gap-2 mb-4">
-              <div className="bg-yellow-300 p-2 rounded">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <polyline points="9 18 15 12 9 6" />
-                </svg>
-              </div>
+              <Image
+                src="/hebo icon.svg"
+                alt="Hebo Icon"
+                width={32}
+                height={32}
+                className="w-8 h-8"
+              />
               <div>
                 <div className="font-bold">hebo.ai</div>
                 <div className="text-sm text-gray-600">{post.days}</div>
@@ -60,21 +53,13 @@ export function LinkedInSection() {
           {posts.map((post, index) => (
             <div key={index} className="bg-gradient-to-br from-yellow-50 to-yellow-100 p-4 rounded-lg shadow-sm" style={{ width: "280px" }}>
               <div className="flex items-center gap-2 mb-4">
-                <div className="bg-yellow-300 p-2 rounded">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <polyline points="9 18 15 12 9 6" />
-                  </svg>
-                </div>
+                <Image
+                  src="/hebo icon.svg"
+                  alt="Hebo Icon"
+                  width={32}
+                  height={32}
+                  className="w-8 h-8"
+                />
                 <div>
                   <div className="font-bold">hebo.ai</div>
                   <div className="text-sm text-gray-600">{post.days}</div>

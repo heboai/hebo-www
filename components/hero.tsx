@@ -3,17 +3,17 @@ import Image from "next/image"
 
 export function Hero() {
   return (
-    <div className="flex flex-col items-center md:text-center px-4 py-12 max-w-6xl mx-auto">
+    <div className="flex flex-col items-start md:items-center px-4 py-12 max-w-6xl mx-auto">
       <div className="bg-[#F8F9D2] text-sm px-4 py-2 rounded-full mb-8 w-full md:w-auto overflow-hidden whitespace-nowrap">
         <span role="img" aria-label="monocle" className="mr-1">
           🧐
         </span>
-        <span className="font-semibold truncate">NEW: Evals - quality control for any LLM / agent &gt;</span>
+        <span className="font-semibold truncate text-xs">NEW: Evals - quality control for any LLM / agent &gt;</span>
       </div>
 
-      <h1 className="text-3xl md:text-5xl font-bold mb-6 text-left md:text-center">
-        Launch AI Agents with{" "} 
-        <br />
+      <h1 className="text-2xl md:text-4xl font-bold mb-6 text-left">
+        Launch AI Agents with{" "}
+        <br/>
         <span className="relative">
           Confidence
           <Image
@@ -24,8 +24,8 @@ export function Hero() {
             className="absolute bottom-[-8px] left-0 w-full h-auto"
           />
         </span>
-        
-        <span className="text-yellow-500">
+        {" "}
+        <span className="text-yellow-500 whitespace-nowrap">
           <Image
             src="/hero-icon.png"
             alt="Hero icon"

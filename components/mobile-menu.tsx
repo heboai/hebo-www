@@ -2,11 +2,8 @@
 
 import Link from "next/link"
 import { Button } from "./ui/button"
-
-interface MobileMenuProps {
-  isOpen: boolean
-  onClose: () => void
-}
+import { MobileMenuProps } from "@/types"
+import Image from "next/image"
 
 export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   if (!isOpen) return null
@@ -17,21 +14,13 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       <div className="fixed top-0 left-1/2 -translate-x-1/2 h-[80%] w-[calc(100%-2rem)] max-w-full bg-[#E8ECFC] pt-[10px] px-6 pb-6 flex flex-col rounded-[18px] my-4">
         <div className="flex justify-between items-center mb-8">
           <div className="flex items-center gap-2">
-            <div className="bg-yellow-300 p-2 rounded">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <polyline points="9 18 15 12 9 6" />
-              </svg>
-            </div>
+            <Image
+              src="/hebo icon.svg"
+              alt="Hebo Icon"
+              width={20}
+              height={20}
+              className="w-5 h-5"
+            />
             <span className="font-bold text-xl">hebo.ai</span>
             <span className="bg-indigo-600 text-white text-sm px-3 py-1 rounded-[8px] ml-2">Hiring</span>
           </div>
