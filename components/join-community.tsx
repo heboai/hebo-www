@@ -9,7 +9,7 @@ export function JoinCommunity() {
       </div>
 
       <div className="flex flex-row justify-between md:justify-end items-center gap-4">
-        <Link href="/docs" className="flex items-center gap-2">
+        <Link href="https://github.com/heboai/hebo" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -30,7 +30,7 @@ export function JoinCommunity() {
           Docs
         </Link>
 
-        <Link href="/discord" className="flex items-center gap-2">
+        <Link href="https://discord.com/invite/cCJtXZRU5p" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -47,7 +47,7 @@ export function JoinCommunity() {
           Discord
         </Link>
 
-        <Link href="/source" className="flex items-center gap-2">
+        <Link href="https://github.com/heboai" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

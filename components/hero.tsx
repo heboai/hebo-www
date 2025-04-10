@@ -1,14 +1,26 @@
+"use client"
+
 import { Button } from "./ui/button"
 import Image from "next/image"
 
 export function Hero() {
   return (
     <div className="flex flex-col items-start md:items-center px-4 py-12 max-w-6xl mx-auto">
-      <div className="bg-[#F8F9D2] text-sm px-4 py-2 rounded-full mb-8 w-full md:w-auto overflow-hidden whitespace-nowrap">
+      <div className="bg-[#F8F9D2] text-sm px-4 py-2 rounded-full mb-4 w-full md:w-auto overflow-hidden whitespace-nowrap">
         <span role="img" aria-label="monocle" className="mr-1">
           🧐
         </span>
-        <span className="font-semibold truncate text-xs">NEW: Evals - quality control for any LLM / agent &gt;</span>
+        <span className="font-semibold truncate text-xs">
+          NEW:{" "}
+          <a 
+            href="https://github.com/heboai/hebo-eval" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            Evals - quality control for any LLM / agent &gt;
+          </a>
+        </span>
       </div>
 
       <h1 className="text-2xl md:text-4xl font-bold mb-6 text-left">
@@ -58,10 +70,12 @@ export function Hero() {
       </p>
 
       <div className="flex flex-row gap-4 mb-8 w-full md:w-auto">
-        <Button variant="custom" className="px-6 text-base font-medium shadow-md h-[48px] md:h-[52px] flex-1 md:flex-none">
-          Get started for Free
-        </Button>
-        <Button variant="custom" className="px-6 text-base font-medium relative shadow-md h-[48px] md:h-[52px] flex-1 md:flex-none">
+        <a href="https://app.hebo.ai/" target="_blank" rel="noopener noreferrer">
+          <Button variant="custom" className="px-6 text-base font-medium shadow-md h-[48px] md:h-[52px] flex-1 md:flex-none">
+            Get started for Free
+          </Button>
+        </a>
+        <Button variant="custom" className="px-6 text-base font-medium relative shadow-md h-[48px] md:h-[52px] flex-1 md:flex-none" onClick={() => window.open('https://github.com/heboai/hebo-eval', '_blank', 'noopener,noreferrer')}>
           Hebo Evals
           <span className="absolute -top-2 -right-2 bg-[#3FB249] text-white text-xs px-2 py-0.5 rounded-[4px] transform rotate-[5deg]">
             New
@@ -83,7 +97,7 @@ export function Hero() {
         >
           <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
         </svg>
-        Fair Source: Join our community
+        <a href="https://github.com/heboai" className="hover:underline">Fair Source: Join our community</a>
       </div>
     </div>
   )

@@ -24,13 +24,15 @@ export function NavBar() {
           className="w-5 h-5"
         />
         <span className="font-bold text-xl">hebo.ai</span>
-        <span className="bg-indigo-600 text-white text-sm px-3 py-1 rounded-[8px] ml-2">Hiring</span>
+        <a href="https://www.linkedin.com/company/hebo-ai/jobs/" target="_blank" rel="noopener noreferrer" className="bg-indigo-600 text-white text-sm px-3 py-1 rounded-[8px] ml-2 hover:bg-indigo-700 transition-colors">
+          Hiring
+        </a>
       </div>
 
       {/* Desktop Navigation */}
       <div className="hidden md:flex items-center gap-6 mt-6">
         <div className="flex bg-[#AFCFFF]/20 rounded-[12px] p-1 gap-1">
-          <Link href="/docs" className="px-4 py-2 rounded-[12px] transition-all hover:bg-[#AFCFFF] hover:text-gray-800 hover:shadow-sm text-gray-600">
+          <Link href="https://github.com/heboai/hebo" className="px-4 py-2 rounded-[12px] transition-all hover:bg-[#AFCFFF] hover:text-gray-800 hover:shadow-sm text-gray-600">
             <div className="flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +55,7 @@ export function NavBar() {
             </div>
           </Link>
 
-          <Link href="/discord" className="px-4 py-2 rounded-[12px] transition-all hover:bg-[#AFCFFF] hover:text-gray-800 hover:shadow-sm text-gray-600">
+          <Link href="https://discord.gg/cCJtXZRU5p" className="px-4 py-2 rounded-[12px] transition-all hover:bg-[#AFCFFF] hover:text-gray-800 hover:shadow-sm text-gray-600">
             <div className="flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +74,7 @@ export function NavBar() {
             </div>
           </Link>
 
-          <Link href="/source" className="px-4 py-2 rounded-[12px] transition-all hover:bg-[#AFCFFF] hover:text-gray-800 hover:shadow-sm text-gray-600">
+          <Link href="https://github.com/heboai" className="px-4 py-2 rounded-[12px] transition-all hover:bg-[#AFCFFF] hover:text-gray-800 hover:shadow-sm text-gray-600" target="_blank" rel="noopener noreferrer">
             <div className="flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +93,7 @@ export function NavBar() {
             </div>
           </Link>
 
-          <Link href="/enterprise" className="px-4 py-2 rounded-[12px] transition-all hover:bg-[#AFCFFF] hover:text-gray-800 hover:shadow-sm text-gray-600">
+          <Link href="#enterprise" className="px-4 py-2 rounded-[12px] transition-all hover:bg-[#AFCFFF] hover:text-gray-800 hover:shadow-sm text-gray-600">
             <div className="flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -114,9 +116,11 @@ export function NavBar() {
       </div>
 
       <div className="hidden md:block">
-        <Button variant="custom" className="px-6 text-base font-medium shadow-md">
-          Sign Up
-        </Button>
+        <a href="https://app.hebo.ai/" target="_blank" rel="noopener noreferrer">
+          <Button variant="custom" className="px-6 text-base font-medium shadow-md">
+            Sign Up
+          </Button>
+        </a>
       </div>
 
       {/* Mobile Menu Button */}

@@ -6,11 +6,24 @@ import Image from "next/image"
 export function LinkedInSection() {
   const scrollContainerRef = useRef<HTMLDivElement>(null)
 
-  const posts = Array(4).fill({
-    days: "4d",
-    title:
-      "Claude 3.7 Sonnet introduces significant advancements in AI capabilities, particularly in hybrid reasoning and extended thought modes. These improvements",
-  })
+  const posts = [
+    {
+      days: "2d",
+      title: "Claude 3.7 Sonnet introduces significant advancements in AI capabilities, particularly in hybrid reasoning and extended thought modes. These improvements enable more sophisticated problem-solving and decision-making processes."
+    },
+    {
+      days: "4d",
+      title: "We're excited to announce our new partnership with leading AI research institutions to advance the development of more robust and reliable AI systems. Stay tuned for more updates!"
+    },
+    {
+      days: "1w",
+      title: "Our team has been working on innovative approaches to improve AI model evaluation and testing. The new framework will help developers ensure their AI systems are more reliable and trustworthy."
+    },
+    {
+      days: "2w",
+      title: "Join us at the upcoming AI Summit where we'll be showcasing our latest developments in AI agent management and monitoring solutions. Don't miss this opportunity to learn about the future of AI deployment!"
+    }
+  ]
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
@@ -81,7 +94,7 @@ export function LinkedInSection() {
       </div>
 
       <div className="flex justify-center mt-8">
-        <a href="#" className="flex items-center text-gray-600 hover:text-gray-900">
+        <a href="https://www.linkedin.com/company/hebo-ai/" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-600 hover:text-gray-900">
           Show all posts
           <svg
             xmlns="http://www.w3.org/2000/svg"

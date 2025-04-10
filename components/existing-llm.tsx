@@ -1,3 +1,5 @@
+"use client"
+
 export function ExistingLLM() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12 text-center">
@@ -9,7 +11,7 @@ export function ExistingLLM() {
           <span className="mr-2">&gt;</span>
           <span>npx install hebo-eval@latest</span>
         </div>
-        <button className="p-1 transition-all hover:bg-gradient-to-r hover:from-purple-600 hover:to-purple-400 rounded-md">
+        <button className="p-1 transition-all hover:bg-gradient-to-r hover:from-purple-600 hover:to-purple-400 rounded-md" onClick={() => window.open('https://github.com/heboai/hebo-eval', '_blank', 'noopener,noreferrer')}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -27,7 +29,7 @@ export function ExistingLLM() {
         </button>
       </div>
 
-      <a href="#" className="text-blue-600 hover:underline hover:text-purple-600 transition-colors">
+      <a href="https://github.com/heboai/hebo-eval" className="text-blue-600 hover:underline hover:text-purple-600 transition-colors" target="_blank" rel="noopener noreferrer">
         Works with any LLM / agent framework, learn more...
       </a>
     </div>

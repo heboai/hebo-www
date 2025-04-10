@@ -32,7 +32,7 @@ export function LifecycleTabs() {
       </div>
 
       <Image
-        src="/hebo-dashboard.png"
+        src="/hebo-dashboard.svg"
         alt="Hebo Dashboard"
         width={1200}
         height={600}

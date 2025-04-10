@@ -43,7 +43,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         </div>
 
         <div className="space-y-6">
-          <Link href="/docs" className="flex items-center gap-2 font-bold">
+          <Link href="https://github.com/heboai/hebo" className="flex items-center gap-2 font-bold">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -64,7 +64,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             Docs
           </Link>
 
-          <Link href="/discord" className="flex items-center gap-2 font-bold">
+          <Link href="https://discord.gg/cCJtXZRU5p" className="flex items-center gap-2 font-bold">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -81,7 +81,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             Discord
           </Link>
 
-          <Link href="/source" className="flex items-center gap-2 font-bold">
+          <Link href="https://github.com/heboai" className="flex items-center gap-2 font-bold">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -98,7 +98,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             Source
           </Link>
 
-          <Link href="/enterprise" className="flex items-center gap-2 font-bold">
+          <Link href="#enterprise" className="flex items-center gap-2 font-bold" onClick={onClose}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -121,9 +121,11 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           <div className="mb-6">
             <h3 className="text-2xl font-bold mb-2 font-geist">Is your AI Pilot stuck?</h3>
             <p className="mb-4">We offer tailored services - let us help you!</p>
-            <Button variant="custom" className="w-full h-[52px] shadow-md font-geist text-[18px] font-semibold rounded-[12px]" onClick={onClose}>
-              Talk to us
-            </Button>
+            <a href="https://3ccat2022.sg.larksuite.com/scheduler/69f1b552384fa196" target="_blank" rel="noopener noreferrer">
+              <Button variant="custom" className="w-full h-[52px] shadow-md font-geist text-[18px] font-semibold rounded-[12px]">
+                Talk to us
+              </Button>
+            </a>
           </div>
 
           <div className="flex items-center gap-2 text-sm text-gray-600">
