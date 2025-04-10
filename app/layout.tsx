@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import GoogleAnalytics from "@/components/google-analytics"
+import { Favicon } from "@/components/favicon"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -22,12 +23,6 @@ export const metadata: Metadata = {
   robots: "index, follow",
   alternates: {
     canonical: "https://hebo.ai"
-  },
-  icons: {
-    icon: [
-      { url: "/hebo-icon.svg", type: "image/svg+xml" },
-      { url: "/hero-icon.png", sizes: "96x96", type: "image/png" }
-    ]
   },
   manifest: "/site.webmanifest",
   appleWebApp: {
@@ -66,6 +61,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Favicon />
+      </head>
       <body className={`${inter.className} bg-gradient-to-tl from-[#F8F9D2] to-[#F5F7FA] min-h-screen`}>
         <GoogleAnalytics />
         {children}
