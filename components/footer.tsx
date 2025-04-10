@@ -10,11 +10,11 @@ export function Footer() {
         <span className="text-[14px] text-gray-600 flex flex-col items-center font-geist">  
           <span className="font-semibold text-[14px] flex items-center gap-1"> 
             <Image
-              src="/hebo icon.svg"
+              src="/hebo-icon.svg"
               alt="Hebo Icon"
-              width={18}
-              height={18}
-              className="w-[18px] h-[18px]"
+              width={20}
+              height={20}
+              className="w-5 h-5"
             />
             hebo.ai 
           </span>

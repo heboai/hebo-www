@@ -22,7 +22,7 @@ export function LinkedInSection() {
           <div key={index} className="bg-gradient-to-br from-yellow-50 to-yellow-100 p-4 rounded-lg shadow-sm">
             <div className="flex items-center gap-2 mb-4">
               <Image
-                src="/hebo icon.svg"
+                src="/hebo-icon.svg"
                 alt="Hebo Icon"
                 width={32}
                 height={32}
@@ -54,7 +54,7 @@ export function LinkedInSection() {
             <div key={index} className="bg-gradient-to-br from-yellow-50 to-yellow-100 p-4 rounded-lg shadow-sm" style={{ width: "280px" }}>
               <div className="flex items-center gap-2 mb-4">
                 <Image
-                  src="/hebo icon.svg"
+                  src="/hebo-icon.svg"
                   alt="Hebo Icon"
                   width={32}
                   height={32}

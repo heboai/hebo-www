@@ -17,7 +17,7 @@ export function NavBar() {
     <nav className="flex items-center justify-between px-4 md:px-12 py-4 relative bg-[#AFCFFF]/25 md:bg-transparent mx-4 my-4 rounded-[18px] md:mx-0 md:my-0 md:rounded-none h-[48px] mt-5">
       <div className="flex items-center gap-2">
         <Image
-          src="/hebo icon.svg"
+          src="/hebo-icon.svg"
           alt="Hebo Icon"
           width={20}
           height={20}

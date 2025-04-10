@@ -15,7 +15,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         <div className="flex justify-between items-center mb-8">
           <div className="flex items-center gap-2">
             <Image
-              src="/hebo icon.svg"
+              src="/hebo-icon.svg"
               alt="Hebo Icon"
               width={20}
               height={20}
