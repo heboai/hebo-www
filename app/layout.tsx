@@ -12,7 +12,8 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
-  userScalable: false
+  userScalable: false,
+  viewportFit: "cover"
 }
 
 export const metadata: Metadata = {
@@ -64,7 +65,7 @@ export default function RootLayout({
       <head>
         <Favicon />
       </head>
-      <body className={`${inter.className} bg-gradient-to-tl from-[#F8F9D2] to-[#F5F7FA] min-h-screen`}>
+      <body className={`${inter.className} bg-gradient-to-tl from-[#F8F9D2] to-[#F5F7FA] min-h-screen overflow-x-hidden`}>
         <GoogleAnalytics />
         {children}
       </body>

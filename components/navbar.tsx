@@ -14,8 +14,9 @@ export function NavBar() {
   }
 
   return (
-    <nav className="flex items-center justify-between px-4 md:px-12 py-4 relative bg-[#AFCFFF]/25 md:bg-transparent mx-4 my-4 rounded-[18px] md:mx-0 md:my-0 md:rounded-none h-[48px] mt-5">
-      <div className="flex items-center gap-2">
+    <nav className="flex items-center justify-between px-4 md:px-12 py-4 relative bg-[#AFCFFF]/25 md:bg-transparent mx-4 my-4 rounded-[18px] md:mx-0 md:my-0 md:rounded-none h-[48px] mt-8">
+      {/* Desktop Navigation */}
+      <div className="flex items-center gap-2 md:mt-6">
         <Image
           src="/hebo-icon.svg"
           alt="Hebo Icon"
@@ -28,8 +29,6 @@ export function NavBar() {
           Hiring
         </a>
       </div>
-
-      {/* Desktop Navigation */}
       <div className="hidden md:flex items-center gap-6 mt-6">
         <div className="flex bg-[#AFCFFF]/20 rounded-[12px] p-1 gap-1">
           <Link href="https://github.com/heboai/hebo" className="px-4 py-2 rounded-[12px] transition-all hover:bg-[#AFCFFF] hover:text-gray-800 hover:shadow-sm text-gray-600">
@@ -115,7 +114,7 @@ export function NavBar() {
         </div>
       </div>
 
-      <div className="hidden md:block">
+      <div className="hidden md:block mt-6">
         <a href="https://app.hebo.ai/" target="_blank" rel="noopener noreferrer">
           <Button variant="custom" className="px-6 text-base font-medium shadow-md">
             Sign Up

@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { Button } from "./ui/button"
-import { MobileMenuProps } from "@/types"
+import { MobileMenuProps } from "../types"
 import Image from "next/image"
 
 export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
