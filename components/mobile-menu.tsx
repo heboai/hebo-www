@@ -128,23 +128,8 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             </a>
           </div>
 
-          <div className="flex items-center gap-2 text-sm text-gray-600">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-gray-400"
-            >
-              <path d="M12 2L2 7l10 5 10-5-10-5z" />
-              <path d="M2 17l10 5 10-5" />
-              <path d="M2 12l10 5 10-5" />
-            </svg>
+          <div className="flex items-center text-sm text-[#333333]vv">
+            <Image src="/IM-Logo.svg" alt="Infinite Monkey Logo" width={24} height={24} />
             <span className="font-geist text-[14px]">
               <span className="font-bold">Infinite Monkey Sdn Bhd</span> (202501003121)
             </span>

@@ -11,7 +11,7 @@ export function LifecycleTabs() {
     <div className="max-w-6xl mx-auto px-4 py-12">
       <div className="flex flex-col md:flex-row items-center justify-center gap-4">
         <h2 className="text-2xl font-bold">The full lifecycle:</h2>
-        <div className="flex bg-[#AFCFFF]/20 rounded-[12px] p-1">
+        <div className="flex bg-[#AFCFFF]/20 rounded-[12px] p-1 mb-[12px] md:mb-[24px]">
           {tabs.map((tab) => (
             <button
               key={tab}
@@ -31,13 +31,44 @@ export function LifecycleTabs() {
         </div>
       </div>
 
-      <Image
-        src="/hebo-dashboard.svg"
-        alt="Hebo Dashboard"
-        width={1200}
-        height={600}
-        className="w-full h-auto shadow-lg rounded-lg"
-      />
+      <div className="relative md:min-h-[400px] mb-[22vh] md:mb-42">
+        <div className={`absolute inset-0 transition-opacity duration-500 ${activeTab === "Build" ? "opacity-100" : "opacity-0"}`}>
+          <Image
+            src="/hebo-dashboard.svg"
+            alt="Hebo Dashboard"
+            width={1200}
+            height={600}
+            className="w-full h-auto shadow-lg rounded-lg"
+          />
+        </div>
+        <div className={`absolute inset-0 transition-opacity duration-500 ${activeTab === "Test" ? "opacity-100" : "opacity-0"}`}>
+          <Image
+            src="/Evaluation.svg"
+            alt="Evaluation"
+            width={1200}
+            height={600}
+            className="w-full h-auto shadow-lg rounded-lg"
+          />
+        </div>
+        <div className={`absolute inset-0 transition-opacity duration-500 ${activeTab === "Monitor" ? "opacity-100" : "opacity-0"}`}>
+          <Image
+            src="/Desktop.svg"
+            alt="Desktop"
+            width={1200}
+            height={600}
+            className="w-full h-auto shadow-lg rounded-lg"
+          />
+        </div>
+        <div className={`absolute inset-0 transition-opacity duration-500 ${activeTab === "Iterate" ? "opacity-100" : "opacity-0"}`}>
+          <Image
+            src="/Messaging.svg"
+            alt="Messaging"
+            width={1200}
+            height={600}
+            className="w-full h-auto shadow-lg rounded-lg"
+          />
+        </div>
+      </div>
     </div>
   )
 }
