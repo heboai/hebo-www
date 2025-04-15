@@ -114,9 +114,9 @@ export function NavBar() {
         </div>
       </div>
 
-      <div className="hidden md:block mt-6">
+      <div className="hidden md:block mt-6 rounded-[18px]">
         <a href="https://app.hebo.ai/" target="_blank" rel="noopener noreferrer">
-          <Button variant="custom" className="px-6 text-base font-medium shadow-md">
+          <Button variant="custom" className="px-6 text-base font-medium shadow-md hover:translate-y-[-2px] transition-transform duration-200">
             Sign Up
           </Button>
         </a>

@@ -31,7 +31,7 @@ export function LifecycleTabs() {
         </div>
       </div>
 
-      <div className="relative md:min-h-[400px] mb-[22vh] md:mb-42">
+      <div className="relative md:min-h-[300px] mb-[22vh] md:mb-42 max-w-[800px] mx-auto">
         <div className={`absolute inset-0 transition-opacity duration-500 ${activeTab === "Build" ? "opacity-100" : "opacity-0"}`}>
           <Image
             src="/hebo-dashboard.svg"
