@@ -45,10 +45,10 @@ export function FAQ() {
         {faqs.map((faq, index) => (
           <div key={index} className="border-b pb-4">
             <button
-              className="flex items-center justify-between w-full text-left py-2"
+              className="flex items-center justify-between w-full text-left py-2 group"
               onClick={() => toggleFaq(index)}
             >
-              <h3 className="text-lg font-medium">{faq.question}</h3>
+              <h3 className="text-lg font-medium group-hover:text-purple-600 transition-colors">{faq.question}</h3>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -59,14 +59,24 @@ export function FAQ() {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className={`transition-transform ${openIndex === index ? "transform rotate-45" : ""}`}
+                className={`transition-transform duration-300 ease-in-out ${openIndex === index ? "rotate-45" : ""}`}
               >
                 <line x1="12" y1="5" x2="12" y2="19" />
                 <line x1="5" y1="12" x2="19" y2="12" />
               </svg>
             </button>
 
-            {openIndex === index && <div className="mt-2 text-gray-600">{faq.answer}</div>}
+            <div 
+              className={`grid transition-all duration-300 ease-in-out ${
+                openIndex === index 
+                  ? "grid-rows-[1fr] opacity-100" 
+                  : "grid-rows-[0fr] opacity-0"
+              }`}
+            >
+              <div className="overflow-hidden">
+                <p className="mt-2 text-gray-600">{faq.answer}</p>
+              </div>
+            </div>
           </div>
         ))}
       </div>

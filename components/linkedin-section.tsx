@@ -53,8 +53,8 @@ export function LinkedInSection() {
             </a>
 
             <div className="flex mt-4 gap-4">
-              <button className="text-sm hover:text-purple-600 transition-colors">Follow</button>
-              <button className="text-sm hover:text-purple-600 transition-colors">Share</button>
+              <a href="https://www.linkedin.com/company/heboai/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-purple-600 transition-colors">Follow</a>
+              <a href="https://www.linkedin.com/company/heboai/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-purple-600 transition-colors">Share</a>
             </div>
           </div>
         ))}
@@ -85,8 +85,8 @@ export function LinkedInSection() {
               </a>
 
               <div className="flex mt-4 gap-4">
-                <button className="text-sm hover:text-purple-600 transition-colors">Follow</button>
-                <button className="text-sm hover:text-purple-600 transition-colors">Share</button>
+                <a href="https://www.linkedin.com/company/heboai/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-purple-600 transition-colors">Follow</a>
+              <a href="https://www.linkedin.com/company/heboai/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-purple-600 transition-colors">Share</a>
               </div>
             </div>
           ))}
