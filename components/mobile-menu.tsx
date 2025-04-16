@@ -128,7 +128,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             </a>
           </div>
 
-          <div className="flex items-center text-sm text-[#333333]vv">
+          <div className="flex items-center text-sm text-[#333333]">
             <Image src="/IM-Logo.svg" alt="Infinite Monkey Logo" width={24} height={24} />
             <span className="font-geist text-[14px]">
               <span className="font-bold">Infinite Monkey Sdn Bhd</span> (202501003121)

@@ -38,12 +38,12 @@ export function FAQ() {
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
+    <div className="max-w-[705px] mx-auto px-4 py-12">
       <h2 className="text-2xl font-bold mb-8">Frequently Asked Questions</h2>
 
       <div className="space-y-4">
         {faqs.map((faq, index) => (
-          <div key={index} className="border-b pb-4">
+          <div key={index} className="border-b pb-4"> 
             <button
               className="flex items-center justify-between w-full text-left py-2 group"
               onClick={() => toggleFaq(index)}

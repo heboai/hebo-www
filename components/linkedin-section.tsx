@@ -26,13 +26,13 @@ export function LinkedInSection() {
   ]
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
+    <div className="max-w-[871px] mx-auto px-4 py-12">
       <h2 className="text-2xl font-bold mb-8 text-center">Follow us on LinkedIn for the latest Gen AI developments</h2>
 
       {/* Desktop Grid */}
       <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {posts.map((post, index) => (
-          <div key={index} className="bg-gradient-to-br from-yellow-50 to-yellow-100 p-4 rounded-lg shadow-sm">
+          <div key={index} className="bg-gradient-to-br from-yellow-50 to-yellow-100 p-4 rounded-lg shadow-sm max-w-[210px] flex flex-col">
             <div className="flex items-center gap-2 mb-4">
               <Image
                 src="/hebo-icon.svg"
@@ -47,12 +47,20 @@ export function LinkedInSection() {
               </div>
             </div>
 
-            <p className="mb-2">{post.title}</p>
-            <a href="#" className="text-blue-600 hover:underline">
+            <p className="mb-2 font-geist text-[14px] line-clamp-5">
+              {post.title}
+            </p>
+            <a 
+              href="https://www.linkedin.com/company/heboai/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
               ... read more
             </a>
+            <div className="w-[100%] h-[1px] bg-[#EEEEEE] mx-auto my-4"></div>
 
-            <div className="flex mt-4 gap-4">
+            <div className="flex justify-between mt-4">
               <a href="https://www.linkedin.com/company/heboai/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-purple-600 transition-colors">Follow</a>
               <a href="https://www.linkedin.com/company/heboai/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-purple-600 transition-colors">Share</a>
             </div>
@@ -64,7 +72,7 @@ export function LinkedInSection() {
       <div className="md:hidden overflow-x-auto pb-4" ref={scrollContainerRef}>
         <div className="flex gap-4" style={{ width: "max-content" }}>
           {posts.map((post, index) => (
-            <div key={index} className="bg-gradient-to-br from-yellow-50 to-yellow-100 p-4 rounded-lg shadow-sm" style={{ width: "280px" }}>
+            <div key={index} className="bg-gradient-to-br from-yellow-50 to-yellow-100 p-4 rounded-lg shadow-sm flex flex-col" style={{ width: "280px" }}>
               <div className="flex items-center gap-2 mb-4">
                 <Image
                   src="/hebo-icon.svg"
@@ -79,14 +87,21 @@ export function LinkedInSection() {
                 </div>
               </div>
 
-              <p className="mb-2">{post.title}</p>
-              <a href="#" className="text-blue-600 hover:underline">
+              <p className="mb-2 line-clamp-4">
+                {post.title}
+              </p>
+              <a 
+                href="https://www.linkedin.com/company/heboai/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
                 ... read more
               </a>
 
-              <div className="flex mt-4 gap-4">
+              <div className="flex justify-between mt-4 mt-auto">
                 <a href="https://www.linkedin.com/company/heboai/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-purple-600 transition-colors">Follow</a>
-              <a href="https://www.linkedin.com/company/heboai/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-purple-600 transition-colors">Share</a>
+                <a href="https://www.linkedin.com/company/heboai/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-purple-600 transition-colors">Share</a>
               </div>
             </div>
           ))}
