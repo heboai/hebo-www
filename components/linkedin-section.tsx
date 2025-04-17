@@ -26,13 +26,13 @@ export function LinkedInSection() {
   ]
 
   return (
-    <div className="max-w-[871px] mx-auto px-4 py-12">
+    <div className="max-w-container-lg mx-auto px-4 py-12">
       <h2 className="text-2xl font-bold mb-8 text-center">Follow us on LinkedIn for the latest Gen AI developments</h2>
 
       {/* Desktop Grid */}
       <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {posts.map((post, index) => (
-          <div key={index} className="bg-gradient-to-br from-yellow-50 to-yellow-100 p-4 rounded-lg shadow-sm max-w-[210px] flex flex-col">
+          <div key={index} className="bg-gradient-to-br from-yellow-50 to-yellow-100 p-4 rounded-lg shadow-sm max-w-card-sm flex flex-col">
             <div className="flex items-center gap-2 mb-4">
               <Image
                 src="/hebo-icon.svg"
@@ -72,7 +72,7 @@ export function LinkedInSection() {
       <div className="md:hidden overflow-x-auto pb-4" ref={scrollContainerRef}>
         <div className="flex gap-4" style={{ width: "max-content" }}>
           {posts.map((post, index) => (
-            <div key={index} className="bg-gradient-to-br from-yellow-50 to-yellow-100 p-4 rounded-lg shadow-sm flex flex-col" style={{ width: "280px" }}>
+            <div key={index} className="bg-gradient-to-br from-yellow-50 to-yellow-100 p-4 rounded-lg shadow-sm flex flex-col max-w-card-md">
               <div className="flex items-center gap-2 mb-4">
                 <Image
                   src="/hebo-icon.svg"

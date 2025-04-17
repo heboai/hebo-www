@@ -8,7 +8,7 @@ export function LifecycleTabs() {
   const tabs = ["Build", "Test", "Monitor", "Iterate"]
 
   return (
-    <div className="max-w-[800px] mx-auto px-4 py-12">
+    <div className="max-w-container-md mx-auto px-4 py-12">
       <div className="flex flex-col md:flex-row items-center justify-center gap-4">
         <h2 className="text-2xl font-bold">The full lifecycle:</h2>
         <div className="flex bg-[#AFCFFF]/20 rounded-[12px] p-1 mb-[12px] md:mb-[24px]">
@@ -31,7 +31,7 @@ export function LifecycleTabs() {
         </div>
       </div>
 
-      <div className="relative md:min-h-[300px] mb-[22vh] md:mb-42 max-w-[800px] mx-auto">
+      <div className="relative md:min-h-[300px] mb-[22vh] md:mb-42 max-w-container-md mx-auto">
         <div className={`absolute inset-0 transition-opacity duration-500 ${activeTab === "Build" ? "opacity-100" : "opacity-0"}`}>
           <Image
             src="/hebo-dashboard.svg"

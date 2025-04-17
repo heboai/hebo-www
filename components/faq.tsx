@@ -38,7 +38,7 @@ export function FAQ() {
   }
 
   return (
-    <div className="max-w-[705px] mx-auto px-4 py-12">
+    <div className="max-w-container-sm mx-auto px-4 py-12">
       <h2 className="text-2xl font-bold mb-8">Frequently Asked Questions</h2>
 
       <div className="space-y-4">
