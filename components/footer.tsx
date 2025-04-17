@@ -7,18 +7,21 @@ export function Footer() {
         <div className="flex justify-end gap-2">
           
         </div>
-        <span className="text-[14px] text-gray-600 flex flex-col items-center font-geist">  
-          <span className="font-semibold text-[14px] flex items-center gap-1"> 
+        <span className="text-[14px] text-[#000000] flex flex-col md:flex-row md:items-center gap-1 font-geist">  
+          <span className="flex items-center gap-1"> 
             <Image
               src="/hebo-icon.svg"
               alt="Hebo Icon"
-              width={20}
-              height={20}
-              className="w-5 h-5"
+              width={18}
+              height={18}
             />
-            hebo.ai 
+            <span className="font-semibold text-[14px]">hebo.ai</span>
+            <span className="md:ml-1">is designed, built and backed by</span>
           </span>
-          <span>is designed, built and backed by <br/> <span className="font-semibold">Infinite Monkey Sdn Bhd</span> (202501003121)</span>
+          <span className="font-semibold flex items-center gap-1 text-[#333333]"> 
+            <Image src="/IM-Logo.svg" alt="Infinite Monkey Logo" width={24} height={24} className="w-6 h-6" /> 
+            Infinite Monkey Sdn Bhd (202501003121)
+          </span>
         </span>
       </div>
     </footer>

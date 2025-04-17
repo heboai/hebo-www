@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export function EnterprisePilot() {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
+    <div className="max-w-container-lg mx-auto px-4 py-12">
       <div id="enterprise" className="bg-gradient-to-br from-[#F8F9D2] to-[#F5F7FA] rounded-xl py-[29px] px-6 md:p-8 flex flex-col md:flex-row items-center md:justify-between gap-6 md:max-h-none overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.1)]">
         <div className="w-full -mt-[15px]">
           <h2 className="text-2xl font-bold mb-1">Is your Enterprise AI Pilot stuck?</h2>

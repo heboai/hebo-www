@@ -11,8 +11,7 @@ export const viewport: Viewport = {
   themeColor: "#f9c823",
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false
+  viewportFit: "cover"
 }
 
 export const metadata: Metadata = {
@@ -33,7 +32,7 @@ export const metadata: Metadata = {
     description: "Manage the whole lifecycle of your conversational agents, from building & testing over real-time monitoring to rapid iterations.",
     images: [
       {
-        url: "https://hebo.ai/hebo-dashboard.png",
+        url: "https://hebo.ai/og-image.png",
         width: 1200,
         height: 630,
         alt: "Hebo AI"
@@ -46,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Hebo AI - Launch AI Agent with Confidence",
     description: "Manage the whole lifecycle of your conversational agents, from building & testing over real-time monitoring to rapid iterations.",
-    images: ["https://hebo.ai/hebo-dashboard.png"]
+    images: ["https://hebo.ai/og-image.png"]
   },
   other: {
     "msapplication-TileColor": "#f9c823"
@@ -64,7 +63,7 @@ export default function RootLayout({
       <head>
         <Favicon />
       </head>
-      <body className={`${inter.className} bg-gradient-to-tl from-[#F8F9D2] to-[#F5F7FA] min-h-screen`}>
+      <body className={`${inter.className} bg-gradient-to-tl from-[#F8F9D2] to-[#F5F7FA] min-h-screen overflow-x-hidden`}>
         <GoogleAnalytics />
         {children}
       </body>

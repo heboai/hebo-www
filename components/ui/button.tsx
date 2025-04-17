@@ -9,17 +9,6 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default:
-          "bg-primary text-primary-foreground hover:bg-primary/90 rounded-md hover:bg-gradient-to-r hover:from-purple-600 hover:to-purple-400",
-        destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90 rounded-md hover:bg-gradient-to-r hover:from-purple-600 hover:to-purple-400",
-        outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-md hover:bg-gradient-to-r hover:from-purple-600 hover:to-purple-400",
-        secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-md hover:bg-gradient-to-r hover:from-purple-600 hover:to-purple-400",
-        ghost:
-          "hover:bg-accent hover:text-accent-foreground rounded-md hover:bg-gradient-to-r hover:from-purple-600 hover:to-purple-400",
-        link: "text-primary underline-offset-4 hover:underline hover:text-purple-600",
         custom: "bg-white text-gray-800 hover:bg-gray-50 relative rounded-[12px] h-[52px] gradient-border",
       },
       size: {
@@ -30,10 +19,10 @@ const buttonVariants = cva(
       },
     },
     defaultVariants: {
-      variant: "default",
+      variant: "custom",
       size: "default",
     },
-  },
+  }
 )
 
 export interface ButtonProps

@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export function JoinCommunity() {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
+    <div className="max-w-container-2xl mx-auto px-4 py-12">
       <div className="flex flex-col md:flex-row items-center gap-4 mb-8">
         <h2 className="text-2xl font-bold">Join the Community</h2>
         <div className="w-full md:flex-1 h-[1px] bg-[#D8D8D8]"></div>

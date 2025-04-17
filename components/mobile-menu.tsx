@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { Button } from "./ui/button"
-import { MobileMenuProps } from "@/types"
+import { MobileMenuProps } from "../types"
 import Image from "next/image"
 
 export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
@@ -11,7 +11,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   return (
     <div className="fixed inset-0 z-50 md:hidden">
       <div className="fixed inset-0 bg-black/20" onClick={onClose} />
-      <div className="fixed top-0 left-1/2 -translate-x-1/2 h-[80%] w-[calc(100%-2rem)] max-w-full bg-[#E8ECFC] pt-[10px] px-6 pb-6 flex flex-col rounded-[18px] my-4">
+      <div className="fixed top-0 left-1/2 -translate-x-1/2 h-mobile-menu w-[calc(100%-2rem)] max-w-full bg-[#E8ECFC] pt-[10px] px-6 pb-6 flex flex-col rounded-[18px] my-4">
         <div className="flex justify-between items-center mb-8">
           <div className="flex items-center gap-2">
             <Image
@@ -128,23 +128,8 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             </a>
           </div>
 
-          <div className="flex items-center gap-2 text-sm text-gray-600">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-gray-400"
-            >
-              <path d="M12 2L2 7l10 5 10-5-10-5z" />
-              <path d="M2 17l10 5 10-5" />
-              <path d="M2 12l10 5 10-5" />
-            </svg>
+          <div className="flex items-center text-sm text-[#333333]">
+            <Image src="/IM-Logo.svg" alt="Infinite Monkey Logo" width={24} height={24} />
             <span className="font-geist text-[14px]">
               <span className="font-bold">Infinite Monkey Sdn Bhd</span> (202501003121)
             </span>
