@@ -12,7 +12,7 @@ export function ExistingLLM() {
   }
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-12 text-center">
+    <div className="max-w-container-llm mx-auto px-4 py-12 text-center">
       <h2 className="text-2xl font-bold mb-2 text-[22px] md:text-[28px]">Already have an<br className="md:hidden" /> existing LLM / Agent?</h2>
       <p className="text-lg mb-6">Get started with Hebo Evals to bullet proof your response quality</p>
 

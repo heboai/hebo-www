@@ -11,7 +11,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   return (
     <div className="fixed inset-0 z-50 md:hidden">
       <div className="fixed inset-0 bg-black/20" onClick={onClose} />
-      <div className="fixed top-0 left-1/2 -translate-x-1/2 h-[80%] w-[calc(100%-2rem)] max-w-full bg-[#E8ECFC] pt-[10px] px-6 pb-6 flex flex-col rounded-[18px] my-4">
+      <div className="fixed top-0 left-1/2 -translate-x-1/2 h-mobile-menu w-[calc(100%-2rem)] max-w-full bg-[#E8ECFC] pt-[10px] px-6 pb-6 flex flex-col rounded-[18px] my-4">
         <div className="flex justify-between items-center mb-8">
           <div className="flex items-center gap-2">
             <Image

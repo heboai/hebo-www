@@ -114,7 +114,7 @@ const config: Config = {
         'container-sm': '705px',    // FAQ width
         'container-md': '800px',    // Lifecycle tabs width
         'container-lg': '871px',    // LinkedIn section, Enterprise pilot width
-        'container-xl': '1280px',   // Existing LLM width
+        'container-llm': '600px',   // Existing LLM width
         'container-2xl': '1536px',  // Hero, Footer, Join Community width
         'card-sm': '210px',         // LinkedIn card width
         'card-md': '280px',         // Mobile LinkedIn card width

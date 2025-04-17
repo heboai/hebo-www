@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export function Hero() {
   return (
-    <div className="flex flex-col items-start md:items-center px-4 py-12 max-w-6xl mx-auto mt-2 md:mt-6 rounded-lg">
+    <div className="flex flex-col items-start md:items-center px-4 py-12 max-w-container-2xl mx-auto mt-2 md:mt-6 rounded-lg">
       <div className="bg-[#fffcd4] text-sm px-4 py-2 rounded-[8px] mb-4 w-full md:w-auto overflow-hidden whitespace-nowrap">
         <span role="img" aria-label="monocle" className="mr-1">
           🧐
