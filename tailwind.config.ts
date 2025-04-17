@@ -9,6 +9,13 @@ const config: Config = {
     "*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
     extend: {
       colors: {
         background: "hsl(var(--background))",
@@ -102,6 +109,44 @@ const config: Config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      maxWidth: {
+        'container-sm': '705px',    // FAQ width
+        'container-md': '800px',    // Lifecycle tabs width
+        'container-lg': '871px',    // LinkedIn section, Enterprise pilot width
+        'container-xl': '1280px',   // Existing LLM width
+        'container-2xl': '1536px',  // Hero, Footer, Join Community width
+        'card-sm': '210px',         // LinkedIn card width
+        'card-md': '280px',         // Mobile LinkedIn card width
+        'dialog': '32rem',          // Dialog component width
+        'sheet': '24rem',           // Sheet component width
+      },
+      maxHeight: {
+        'mobile-menu': '80%',       // Mobile menu height
+        'image-sm': '173px',        // Enterprise pilot image height
+      },
+      spacing: {
+        'header-sm': '48px',
+        'header-md': '52px',
+        'container-sm': '705px',
+        'container-md': '800px',
+        'container-lg': '871px',
+        'container-xl': '1280px',
+        'container-2xl': '1536px',
+        'card-sm': '210px',
+        'card-md': '280px',
+        'image-sm': '120px',
+        'image-md': '173px',
+      },
+      
+      gridTemplateColumns: {
+        'linkedin-md': 'repeat(2, minmax(0, 1fr))',
+        'linkedin-lg': 'repeat(4, minmax(0, 1fr))',
+      },
+
+      fontSize: {
+        'heading-sm': ['22px', '1.2'],
+        'heading-md': ['28px', '1.2'],
       },
     },
   },
