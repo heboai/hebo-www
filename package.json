@@ -65,9 +65,6 @@
     "vaul": "^0.9.6",
     "zod": "^3.24.1"
   },
-  "overrides": {
-    "path-to-regexp": "6.3.0"
-  },
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.13.12",
     "@types/node": "^22",
