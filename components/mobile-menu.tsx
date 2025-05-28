@@ -43,7 +43,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         </div>
 
         <div className="space-y-6">
-          <Link href="https://github.com/heboai/hebo" className="flex items-center gap-2 font-bold">
+          <Link href="https://docs.hebo.ai/" className="flex items-center gap-2 font-bold">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

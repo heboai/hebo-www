@@ -31,7 +31,7 @@ export function NavBar() {
       </div>
       <div className="hidden md:flex items-center gap-6 mt-6">
         <div className="flex bg-[#AFCFFF]/20 rounded-[12px] p-1 gap-1">
-          <Link href="https://github.com/heboai/hebo" className="px-4 py-2 rounded-[12px] transition-all hover:bg-[#AFCFFF] hover:text-gray-800 hover:shadow-sm text-gray-600">
+          <Link href="https://docs.hebo.ai/" className="px-4 py-2 rounded-[12px] transition-all hover:bg-[#AFCFFF] hover:text-gray-800 hover:shadow-sm text-gray-600">
             <div className="flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

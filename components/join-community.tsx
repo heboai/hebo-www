@@ -2,14 +2,14 @@ import Link from "next/link"
 
 export function JoinCommunity() {
   return (
-    <div className="max-w-container-2xl mx-auto px-4 py-12">
+    <div className="max-w-[766px] mx-auto px-4 py-12">
       <div className="flex flex-col md:flex-row items-center gap-4 mb-8">
         <h2 className="text-2xl font-bold">Join the Community</h2>
         <div className="w-full md:flex-1 h-[1px] bg-[#D8D8D8]"></div>
       </div>
 
       <div className="flex flex-row justify-between md:justify-end items-center gap-4">
-        <Link href="https://github.com/heboai/hebo" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+        <Link href="https://docs.hebo.ai/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
